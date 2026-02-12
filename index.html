@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js" defer></script>
 </head>
 
@@ -116,8 +117,8 @@
             <h3>Quick callback</h3>
             <p class="muted">Leave your details and we’ll contact you.</p>
 
-            <!-- Formspree (works on GitHub Pages) -->
-            <form id="miniForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <!-- emailjs (works on GitHub Pages) -->
+            <form id="miniForm" action="#" method="POST">
               <label>
                 Name
                 <input type="text" name="name" placeholder="Your name" required />
@@ -532,8 +533,8 @@
         <div class="contact-panel">
           <h3>Request a quote</h3>
 
-          <!-- Formspree -->
-          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <!-- emailjs -->
+          <form id="contactForm" action="#" method="POST">
             <div class="grid-2">
               <label>
                 Full name
