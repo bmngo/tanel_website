@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TANEL Accounting & Advisory | Full-Service Accounting & Tax</title>
+  <meta name="description" content="TANEL Accounting & Advisory offers bookkeeping, tax, payroll, annual financial statements, VAT & compliance for SMEs and individuals." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Notice -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>📍 Serving South Africa • Remote & On-Site Support</span>
+      <a class="topbar-link" href="#contact">Book a free consultation</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <img class="brand-logo" src="tanel-logo.png" alt="TANEL Accounting & Advisory logo" />
+        <div class="brand-text">
+          <span class="brand-name">TANEL</span>
+          <span class="brand-tag">Accounting & Advisory</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">How it works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn-sm btn-primary" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="pill">
+            <span class="dot"></span>
+            Full-service accounting • Tax • Payroll • Compliance
+          </div>
+          <div class="hero-logo-row">
+            <img class="hero-logo" src="tanel-logo.png" alt="TANEL Accounting & Advisory logo" />
+          </div>
+
+          <h1>
+            Accounting that keeps you
+            <span class="grad">compliant</span>, <span class="grad">confident</span>, and <span class="grad">in control</span>.
+          </h1>
+          <p>
+            TANEL Accounting & Advisory helps SMEs and individuals manage bookkeeping, VAT, payroll, tax returns, and annual financial statements—
+            with clear reporting and practical advice.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">Get a quote</a>
+            <a class="btn btn-ghost" href="#services">View services</a>
+          </div>
+
+          <div class="hero-badges">
+            <div class="badge">
+              <strong>Fast Turnaround</strong>
+              <span>Reliable monthly reporting</span>
+            </div>
+            <div class="badge">
+              <strong>Strict Compliance</strong>
+              <span>Tax + statutory submissions</span>
+            </div>
+            <div class="badge">
+              <strong>Client-First</strong>
+              <span>Tailored packages</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="stat-grid">
+            <div class="stat">
+              <span class="stat-kpi">99%</span>
+              <span class="stat-label">On-time submissions</span>
+            </div>
+            <div class="stat">
+              <span class="stat-kpi">48h</span>
+              <span class="stat-label">Avg response time</span>
+            </div>
+            <div class="stat">
+              <span class="stat-kpi">SME</span>
+              <span class="stat-label">Growth support</span>
+            </div>
+            <div class="stat">
+              <span class="stat-kpi">POPIA</span>
+              <span class="stat-label">Secure handling</span>
+            </div>
+          </div>
+
+          <div class="hero-form">
+            <h3>Quick callback</h3>
+            <p class="muted">Leave your details and we’ll contact you.</p>
+
+            <!-- Formspree (works on GitHub Pages) -->
+            <form id="miniForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@email.com" required />
+              </label>
+              <label>
+                Phone
+                <input type="tel" name="phone" placeholder="e.g. 072 123 4567" required />
+              </label>
+
+              <!-- Optional subject / routing -->
+              <input type="hidden" name="_subject" value="New callback request — TANEL Website" />
+
+              <button class="btn btn-primary w-full" type="submit">Request callback</button>
+              <p class="form-note">Your details are sent securely and used only to contact you back.</p>
+              <div class="form-msg" id="miniFormMsg" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container trust-row">
+        <div class="trust-item">Bookkeeping</div>
+        <div class="trust-item">VAT & PAYE</div>
+        <div class="trust-item">Tax Returns</div>
+        <div class="trust-item">Payroll</div>
+        <div class="trust-item">Annual Financial Statements</div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>Services</h2>
+          <p class="muted">
+            Everything you need—whether you’re starting up, scaling, or cleaning up your books.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon">📘</div>
+            <h3>Bookkeeping & Management Accounts</h3>
+            <p>Monthly bookkeeping, reconciliations, cash flow tracking, and management reporting.</p>
+            <ul class="bullets">
+              <li>Bank & supplier reconciliations</li>
+              <li>Monthly reports & dashboards</li>
+              <li>Expense categorisation</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon">🧾</div>
+            <h3>Tax Services</h3>
+            <p>Tax planning and compliance for businesses and individuals—done right and on time.</p>
+            <ul class="bullets">
+              <li>Income tax returns</li>
+              <li>Provisional tax</li>
+              <li>Tax clearance support</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon">🏷️</div>
+            <h3>VAT & Statutory Submissions</h3>
+            <p>VAT registration, VAT returns, PAYE submissions, and compliance support.</p>
+            <ul class="bullets">
+              <li>VAT201 preparation</li>
+              <li>PAYE/SDL/UIF submissions</li>
+              <li>Compliance reviews</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon">👥</div>
+            <h3>Payroll</h3>
+            <p>Accurate payroll processing with payslips, leave tracking, and statutory reporting.</p>
+            <ul class="bullets">
+              <li>Payslips & IRP5s</li>
+              <li>Leave & deductions</li>
+              <li>Employer filings</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon">📄</div>
+            <h3>Annual Financial Statements</h3>
+            <p>Annual financial statements prepared with accuracy and audit readiness in mind.</p>
+            <ul class="bullets">
+              <li>Year-end close</li>
+              <li>AFS preparation</li>
+              <li>Supporting schedules</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon">🏢</div>
+            <h3>Company Setup & Compliance</h3>
+            <p>Business registrations and ongoing compliance support so you stay in good standing.</p>
+            <ul class="bullets">
+              <li>Company registration</li>
+              <li>Director/return compliance</li>
+              <li>Record keeping</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section alt" id="about">
+      <div class="container about-grid">
+        <div>
+          <h2>About our firm</h2>
+          <p class="muted">
+            TANEL Accounting & Advisory is built on precision, integrity, and clear communication.
+            We don’t just “do the books”—we help you understand them.
+          </p>
+
+          <div class="about-points">
+            <div class="point">
+              <strong>Practical advice</strong>
+              <span>Numbers translated into decisions.</span>
+            </div>
+            <div class="point">
+              <strong>Secure handling</strong>
+              <span>Confidential, POPIA-aware processes.</span>
+            </div>
+            <div class="point">
+              <strong>Scalable support</strong>
+              <span>From start-ups to established SMEs.</span>
+            </div>
+          </div>
+
+          <div class="about-cta">
+            <a class="btn btn-primary" href="#contact">Talk to an accountant</a>
+            <a class="btn btn-ghost" href="#pricing">See packages</a>
+          </div>
+        </div>
+
+        <div class="about-panel">
+          <h3>Industries we support</h3>
+          <p class="muted">Experience across common SME sectors.</p>
+          <div class="chips">
+            <span class="chip">Retail</span>
+            <span class="chip">Professional Services</span>
+            <span class="chip">Construction</span>
+            <span class="chip">Manufacturing</span>
+            <span class="chip">Hospitality</span>
+            <span class="chip">Non-Profit</span>
+            <span class="chip">Transport</span>
+            <span class="chip">E-commerce</span>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="mini-kpis">
+            <div>
+              <strong>Monthly</strong>
+              <span class="muted">Reporting</span>
+            </div>
+            <div>
+              <strong>Quarterly</strong>
+              <span class="muted">VAT cycles</span>
+            </div>
+            <div>
+              <strong>Year-End</strong>
+              <span class="muted">AFS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p class="muted">A simple process that keeps things clear and on track.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>
+              <h3>Consultation</h3>
+              <p>We learn your business needs, timelines, and current setup.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>
+              <h3>Setup & Access</h3>
+              <p>We set up processes for documents, bookkeeping, payroll, and reporting.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>
+              <h3>Monthly Delivery</h3>
+              <p>We reconcile, report, submit, and keep you compliant—month after month.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div>
+              <h3>Review & Improve</h3>
+              <p>We review performance and suggest ways to improve cash flow and margins.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-strip">
+          <p>
+            “Clear reporting, quick responses, and our VAT submissions have never been smoother.”
+            <span>— SME Client</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+<!-- Pricing -->
+<section class="section alt" id="pricing">
+  <div class="container">
+    <div class="section-head">
+      <h2>Business Packages</h2>
+      <p class="muted">
+        Transparent monthly pricing tailored to your business size and transaction volume.
+      </p>
+    </div>
+
+    <div class="pricing">
+
+      <!-- Small Business -->
+      <article class="price-card">
+        <h3>SMALL BUSINESS PACKAGE</h3>
+        <p class="price"><strong>R4,000</strong><span>/month</span></p>
+        <p class="muted">Suitable for: Sole proprietors / small companies (0–120 transactions per month)</p>
+        <ul class="bullets">
+          <li>Monthly transaction capturing</li>
+          <li>Bank reconciliation (1 account)</li>
+          <li>Expense categorisation</li>
+          <li>General ledger maintenance</li>
+          <li>Monthly management report (Income & Expense Summary)</li>
+          <li>Payroll processing (less than 10 employees)</li>
+          <li>EMP201 submission (PAYE/UIF/SDL)</li>
+          <li>UIF monthly declarations</li>
+          <li>Compliance monitoring & reminders</li>
+        </ul>
+        <a class="btn btn-ghost w-full" href="#contact">Choose Small</a>
+      </article>
+
+      <!-- Medium Business -->
+      <article class="price-card featured">
+        <div class="ribbon">Most Popular</div>
+        <h3>MEDIUM BUSINESS PACKAGE</h3>
+        <p class="price"><strong>R6,000</strong><span>/month</span></p>
+        <p class="muted">Suitable for: Growing businesses (120–300 transactions)</p>
+        <ul class="bullets">
+          <li>Monthly transaction capturing</li>
+          <li>Bank reconciliation (up to 2 accounts)</li>
+          <li>Credit card reconciliation</li>
+          <li>Expense & revenue analysis</li>
+          <li>General ledger review</li>
+          <li>Monthly management reports (Income Statement + insights)</li>
+          <li>Payroll processing (less than 10 employees)</li>
+          <li>EMP201 submission</li>
+          <li>UIF monthly declarations</li>
+          <li>Monthly statutory submissions</li>
+          <li>SARS eFiling profile management</li>
+          <li>Basic financial performance discussion</li>
+        </ul>
+        <a class="btn btn-primary w-full" href="#contact">Choose Medium</a>
+      </article>
+
+      <!-- Large Business -->
+      <article class="price-card">
+        <h3>LARGE BUSINESS PACKAGE</h3>
+        <p class="price"><strong>R8,000</strong><span>/month</span></p>
+        <p class="muted">Suitable for: Established businesses (300+ transactions)</p>
+        <ul class="bullets">
+          <li>Full monthly bookkeeping</li>
+          <li>Bank & credit card reconciliations</li>
+          <li>Supplier & debtor tracking</li>
+          <li>Monthly management accounts</li>
+          <li>Financial performance review</li>
+          <li>Payroll processing (less than 30 employees)</li>
+          <li>EMP201 submission</li>
+          <li>UIF declarations</li>
+          <li>Monthly statutory compliance submissions</li>
+          <li>SARS correspondence (administrative)</li>
+          <li>Ongoing compliance advisory</li>
+          <li>Priority support</li>
+        </ul>
+        <a class="btn btn-ghost w-full" href="#contact">Choose Large</a>
+      </article>
+
+    </div>
+
+    <!-- Separate Services -->
+    <div class="section-head" style="margin-top:60px;">
+      <h2>Services Available Separately</h2>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <ul class="bullets">
+          <li>Standalone Bookkeeping</li>
+          <li>Payroll Only</li>
+          <li>Provisional Tax</li>
+          <li>ITR14 Submission</li>
+          <li>VAT Submission</li>
+          <li>SARS Registrations</li>
+          <li>CIPC Services</li>
+          <li>Advisory & Consulting</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- CIPC Pricing -->
+    <div class="section-head" style="margin-top:60px;">
+      <h2>CIPC Services & Pricing</h2>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <ul class="bullets">
+          <li>Annual Return (AR) Filing – R500</li>
+          <li>Beneficial Ownership (BO) Submission – R1,000</li>
+          <li>Director Changes – R500</li>
+          <li>Share Certificate Preparation – R800</li>
+          <li>Company Disclosure Certificate – R500</li>
+          <li>Custom CIPC Compliance Package – From R1,500</li>
+        </ul>
+      </article>
+    </div>
+
+    <p class="tiny muted center" style="margin-top:20px;">
+      *Pricing may vary depending on complexity, transaction volume, and regulatory requirements.
+    </p>
+
+  </div>
+</section>
+
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>FAQ</h2>
+          <p class="muted">Quick answers to common questions.</p>
+        </div>
+
+        <div class="faq">
+          <details class="faq-item">
+            <summary>Do you work with small businesses and individuals?</summary>
+            <p>Yes. We support individuals, start-ups, and SMEs. Packages can be tailored to your needs.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can you help if my books are behind?</summary>
+            <p>Yes. We offer clean-up and catch-up services, then we move you onto a monthly process.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do you offer remote services?</summary>
+            <p>Yes. We can work fully remote using secure document sharing and scheduled check-ins.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do you keep client data secure?</summary>
+            <p>We follow strict confidentiality practices and implement secure workflows for document handling.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section alt" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <h2>Contact us</h2>
+          <p class="muted">
+            Tell us what you need and we’ll respond with the next steps and a quote.
+          </p>
+
+          <div class="contact-cards">
+            <div class="contact-card">
+              <strong>Email</strong>
+              <a href="mailto:ayanda.nyambi@icloud.com">ayanda.nyambi@icloud.com</a>
+            </div>
+            <div class="contact-card">
+              <strong>Phone / WhatsApp</strong>
+              <a href="tel:+27601552582">+27 60 155 2582</a>
+            </div>
+            <div class="contact-card">
+              <strong>Hours</strong>
+              <span>Mon–Fri • 08:00–16:30</span>
+            </div>
+          </div>
+
+          <div class="note">
+            <strong>Note:</strong> Holidays may differ.
+          </div>
+        </div>
+
+        <div class="contact-panel">
+          <h3>Request a quote</h3>
+
+          <!-- Formspree -->
+          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="grid-2">
+              <label>
+                Full name
+                <input type="text" name="name" placeholder="Your full name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@email.com" required />
+              </label>
+            </div>
+
+            <div class="grid-2">
+              <label>
+                Phone
+                <input type="tel" name="phone" placeholder="e.g. 072 123 4567" required />
+              </label>
+              <label>
+                Service needed
+                <select name="service" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option>Bookkeeping</option>
+                  <option>Tax Returns</option>
+                  <option>VAT & Compliance</option>
+                  <option>Payroll</option>
+                  <option>Annual Financial Statements</option>
+                  <option>Company Registration</option>
+                  <option>Other</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell us about your business and what you need..." required></textarea>
+            </label>
+
+            <input type="hidden" name="_subject" value="New quote request — TANEL Website" />
+
+            <button class="btn btn-primary w-full" type="submit">Send request</button>
+            <p class="form-note">Get in touch now and get 30 minutes consultation for free!!.</p>
+            <div class="form-msg" id="contactFormMsg" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- WhatsApp Floating Button -->
+  <a class="whatsapp"
+     href="https://wa.me/27601552582?text=Hi%20TANEL%20Accounting%20%26%20Advisory%2C%20I%20would%20like%20a%20quote%20for%20accounting%20services."
+     target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    💬
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <div>
+            <strong>TANEL Accounting & Advisory</strong>
+            <div class="muted">Full-service accounting & compliance</div>
+          </div>
+        </div>
+        <p class="tiny muted">© <span id="year"></span> TANEL Accounting & Advisory. All rights reserved.</p>
+      </div>
+
+      <div class="developer-credit">
+        Website designed & developed by
+        <a href="https://prossifoth.co.za" target="_blank" rel="noopener">
+           Prossifoth (pty) ltd 
+        </a>
+      </div>
+
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
