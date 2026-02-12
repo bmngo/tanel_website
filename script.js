@@ -52,3 +52,39 @@ function attachFormMessage(formId, msgId) {
 
 attachFormMessage("miniForm", "miniFormMsg");
 attachFormMessage("contactForm", "contactFormMsg");
+
+// ✅ EmailJS setup + send on submit
+document.addEventListener("DOMContentLoaded", () => {
+  // 1) Put your EmailJS public key here
+  emailjs.init("XQFxyP0UJ0_o5JMko");
+
+  function wireEmailJS(formId, msgId) {
+    const form = document.getElementById(formId);
+    const msg = document.getElementById(msgId);
+    if (!form || !msg) return;
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      msg.textContent = "Sending…";
+      msg.style.opacity = "1";
+
+      emailjs.sendForm(
+        "service_bd1mrrc",
+        "template_m3jcldd",
+        form
+      )
+      .then(() => {
+        msg.textContent = "✅ Thanks! We received your request. We’ll contact you shortly.";
+        form.reset();
+      })
+      .catch((err) => {
+        console.error(err);
+        msg.textContent = "❌ Failed to send. Please try again, or WhatsApp us.";
+      });
+    });
+  }
+
+  wireEmailJS("miniForm", "miniFormMsg");
+  wireEmailJS("contactForm", "contactFormMsg");
+});
